@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:/Lixo/Projetos/python/skills/fastapi/app/api\" \"c:/Lixo/Projetos/python/skills/fastapi/app/core\" \"c:/Lixo/Projetos/python/skills/fastapi/app/schemas\" \"c:/Lixo/Projetos/python/skills/fastapi/tests\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Lixo\\Projetos\\python\\skills\\fastapi\\app"
+    ]
+  }
+}
