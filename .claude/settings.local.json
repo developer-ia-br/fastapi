@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir -p \"c:/Lixo/Projetos/python/skills/fastapi/app/api\" \"c:/Lixo/Projetos/python/skills/fastapi/app/core\" \"c:/Lixo/Projetos/python/skills/fastapi/app/schemas\" \"c:/Lixo/Projetos/python/skills/fastapi/tests\")"
+      "Bash(mkdir -p \"c:/Lixo/Projetos/python/skills/fastapi/app/api\" \"c:/Lixo/Projetos/python/skills/fastapi/app/core\" \"c:/Lixo/Projetos/python/skills/fastapi/app/schemas\" \"c:/Lixo/Projetos/python/skills/fastapi/tests\")",
+      "PowerShell(& \"c:\\\\Lixo\\\\Projetos\\\\python\\\\skills\\\\fastapi\\\\venv\\\\Scripts\\\\pip.exe\" install -q -r \"c:\\\\Lixo\\\\Projetos\\\\python\\\\skills\\\\fastapi\\\\requirements.txt\")",
+      "Bash(timeout 6 ./venv/Scripts/fastapi.exe run --help)"
     ],
     "additionalDirectories": [
       "c:\\Lixo\\Projetos\\python\\skills\\fastapi\\app"
