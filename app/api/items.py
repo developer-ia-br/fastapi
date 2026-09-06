@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from fastapi import APIRouter, HTTPException, Path
+from fastapi import APIRouter, HTTPException, Path, status
 
 from app.schemas.item import Item
 
@@ -14,5 +14,5 @@ _ITEMS: dict[int, Item] = {
 @router.get("/{item_id}")
 def get_item(item_id: Annotated[int, Path(ge=1, description="The item ID")]) -> Item:
     if item_id not in _ITEMS:
-        raise HTTPException(status_code=404, detail="Item not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Item not found")
     return _ITEMS[item_id]
