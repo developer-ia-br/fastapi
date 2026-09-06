@@ -40,4 +40,4 @@ There is currently no persistence layer — `app/api/items.py` holds data in an 
 
 ## Conventions
 
-This project follows the `fastapi` skill (`.agents/skill/fastapi/skill.md`): prefer return-type annotations over `response_model` (use `response_model` only when the public schema differs from the returned value), use `Annotated[..., Path()/Query()/Depends()]` for parameter and dependency declarations, declare router-level `prefix`/`tags`/shared dependencies on the `APIRouter` itself, and avoid `Ellipsis` defaults or Pydantic `RootModel`.
+This project follows the `fastapi` skill (`.claude/skills/fastapi/SKILL.md`): prefer return-type annotations over `response_model` (use `response_model` only when the public schema differs from the returned value), use `Annotated[..., Path()/Query()/Depends()]` for parameter and dependency declarations, declare router-level `prefix`/`tags`/shared dependencies on the `APIRouter` itself, and avoid `Ellipsis` defaults or Pydantic `RootModel`.
