@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "pytest-best-practices": {
+      "source": "cfircoo/claude-code-toolkit",
+      "sourceType": "github",
+      "skillPath": "skills/pytest-best-practices/SKILL.md",
+      "computedHash": "b767373b9e0abcfb6b7a0e725fd5874a5273053bb45249e0611b858c2c748e15"
+    }
+  }
+}
