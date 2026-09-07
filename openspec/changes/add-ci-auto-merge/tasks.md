@@ -16,6 +16,6 @@
 
 ## 4. Validação end-to-end
 
-- [ ] 4.1 Abrir um pull request de teste contra `main` e verificar que os checks de teste e lint aparecem e passam
-- [ ] 4.2 Confirmar que o PR de teste é mesclado automaticamente assim que os checks passam, verificando pelo histórico do PR que o merge foi feito pela Action, não manualmente
-- [ ] 4.3 Abrir um segundo PR de teste que falhe propositalmente (teste ou lint quebrado) e verificar que ele permanece sem merge com o check reportando falha
+- [x] 4.1 Abrir um pull request de teste contra `main` e verificar que os checks de teste e lint aparecem e passam (PR #3 `ci-test-pass`: check "Test & Lint" = success)
+- [x] 4.2 Confirmar que o PR de teste é mesclado automaticamente assim que os checks passam, verificando pelo histórico do PR que o merge foi feito pela Action, não manualmente (PR #3: `merged_by = github-actions[bot]`, check "Auto-merge" = success)
+- [x] 4.3 Abrir um segundo PR de teste que falhe propositalmente (teste ou lint quebrado) e verificar que ele permanece sem merge com o check reportando falha (PR #2 `ci-test-fail`: check "Test & Lint" = failure, "Auto-merge" = skipped, PR permanece aberto sem merge)
