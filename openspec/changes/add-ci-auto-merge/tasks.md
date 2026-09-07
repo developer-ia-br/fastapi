@@ -11,8 +11,8 @@
 
 ## 3. Configuração manual do repositório (fora do código versionado)
 
-- [ ] 3.1 Habilitar a opção "Allow auto-merge" nas configurações do repositório no GitHub e verificar que ela aparece marcada em Settings > General
-- [ ] 3.2 Criar uma branch protection rule para `main` exigindo o check de CI deste workflow antes do merge, e verificar que um PR de teste mostra esse check como obrigatório
+- [x] 3.1 Habilitar a opção "Allow auto-merge" nas configurações do repositório no GitHub e verificar que ela aparece marcada em Settings > General
+- [x] 3.2 Criar uma branch protection rule para `main` exigindo o check de CI deste workflow antes do merge, e verificar que um PR de teste mostra esse check como obrigatório
 
 ## 4. Validação end-to-end
 
