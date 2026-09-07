@@ -37,3 +37,9 @@ def test_double_valid_integer(client: TestClient) -> None:
 def test_double_invalid_value_type(client: TestClient) -> None:
     response = client.get("/math/double/abc")
     assert response.status_code == 422
+
+
+def test_concat_valid_string(client: TestClient) -> None:
+    response = client.get("/str/abc")
+    assert response.status_code == 200
+    assert response.json() == {"result": "abcX"}
