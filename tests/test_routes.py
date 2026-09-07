@@ -37,3 +37,8 @@ def test_double_valid_integer(client: TestClient) -> None:
 def test_double_invalid_value_type(client: TestClient) -> None:
     response = client.get("/math/double/abc")
     assert response.status_code == 422
+
+
+def test_ci_gate_intentionally_fails(client: TestClient) -> None:
+    """Temporary: validates that CI blocks merge on a failing test (task 4.3)."""
+    assert False
