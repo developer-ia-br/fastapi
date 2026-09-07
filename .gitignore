@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Node
+node_modules/
+node_modules/yoctocolors/package.json
+
 # Distribution / packaging
 .Python
 build/
@@ -218,3 +222,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
