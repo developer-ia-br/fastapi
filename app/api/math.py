@@ -8,5 +8,7 @@ router = APIRouter(prefix="/math", tags=["math"])
 
 
 @router.get("/double/{value}")
-def double(value: Annotated[int, Path(description="The integer to double")]) -> DoubleResult:
+def double(
+    value: Annotated[int, Path(description="The integer to double")],
+) -> DoubleResult:
     return DoubleResult(result=value * 2)
